@@ -1,8 +1,9 @@
 from flask import Flask, request, json, jsonify
-
+from redis import Redis
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
+redis = Redis(host='redis', port=6379)
 
 tasks = {
     '1': 'スーパーで買い物をする',
@@ -71,4 +72,4 @@ def update_task(taskid):
     return jsonify(json)
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(host="0.0.0.0", debug=True)
