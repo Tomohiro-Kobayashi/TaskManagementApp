@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+  color:  aliceblue;
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+}
+
+header {
+  text-align: center;
+  background-color: bisque;
+  padding: 4px 10%;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 0.25px black;
+}
+
+.app {
+  background: url(../src/images/bgimage.jpg);
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+.taskCard {
+  width: 250px;
+  padding: 10px 25px;
+  margin: 10px 1%;
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+
+.taskCardTitleInputArea {
+  margin-bottom: 10px ;
+  width: 30%;
+  cursor: pointer;
+}
+
+.taskCardTitleInput {
+  width: 80px;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 3px;
+  border:none;
+  outline:none; 
+}
+
+.taskAddInput {
+  width: 100%;
+  font-size: 1.3rem;
+  padding:10px 15px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+
+
+.taskBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:17px 0px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px, black;
+}
+
+.taskText {
+  margin-left: 12px;
+}
+
+.taskTrashButton {
+  margin-right: 9px;
+  border: none;
+
+}
+
+.addTaskCardButtonsArea {
+  margin-left: 1%;
+  margin-top: 25px;
+}
+
+.addTaskCardButton {
+  padding: 10px 18px;
+  border-radius: 9999px;
+  font-size:15px;
+  background-color: blanchedalmond;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.addTaskCardButton:hover {
+  box-shadow: none;
+  transform: translate(1px, 1px, 1px);
+}
+
+.taskCardsArea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.taskCardTitleAndTaskCardDeleteButtonArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskCardDeleteButton {
+  border: none;
+  color: red;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
